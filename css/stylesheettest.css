@@ -1,0 +1,300 @@
+/* 
+=================================================
+                    MIXED
+=================================================
+*/
+
+:root,html {
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-grid {
+    margin: 0 0 20px 0;
+}
+
+.col {
+    background: salmon;
+    padding: 20px;
+}
+
+/*
+=================================================
+            FLEXCONTAINERS
+=================================================
+*/
+
+.flex-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-heading-container {
+    justify-content: center;
+}
+
+.flex-grid .col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex-grid-thirds {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+    width: 32%;
+}
+
+.flexbox-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* 
+=================================================
+                    HEADER
+=================================================
+*/
+
+header {
+    background-color: #0b3c5d;
+    position: fixed;
+    width: 100%;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.6rem;
+    height: 3em;
+    line-height: 3em;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    background-color: #D9B310;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+/*
+==========================================
+            LOGIN FORM
+==========================================
+*/
+
+.flexbox-form {
+    width: 550px;
+    margin: 100px 0;
+    border-color: #ccc;
+}
+
+.panel-login {
+    width: 550px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align: center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #999;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #000;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    border: 1px solid #999;
+    font: 1em sans-serif;
+    width: 300px;
+}
+
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+    
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+
+/* 
+=================================================
+                FOOTER
+=================================================
+*/
+
+footer {
+    background-color: #0b3c5d;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.6rem;
+    height: 3em;
+    line-height: 3em;
+}
+
+footer ul a:hover {
+    background-color: #D9B310;
+    text-decoration: none;
+}
+
+.flex-address {
+    display: flex;
+}
+
+.flex-address h4, address {
+    flex: 1 1 100%;
+    color: #fff;
+}
+
+.flex-copyright {
+    display: flex;
+}
+
+.flex-copyright p {
+    flex: 1 1 100%;
+    color: #fff;
+}
+
+/*
+==========================================
+            MEDIAQUERIES
+==========================================
+*/
+
+@media (max-width: 400px) {
+    .flex-grid,
+    .flex-grid-thirds {
+    display: block;
+    }
+    .flex-grid .col,
+    .flex-grid-thirds .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
